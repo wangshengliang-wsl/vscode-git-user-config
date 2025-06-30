@@ -1,0 +1,81 @@
+{
+  "publisher": "Joruno-w",
+  "name": "vscode-git-user-config",
+  "displayName": "vscode-git-user-config",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.4.1",
+  "description": "",
+  "author": "Joruno-w <1710642275@qq.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/Joruno-w",
+  "homepage": "https://github.com/Joruno-w/vscode-git-user-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joruno-w/vscode-git-user-config"
+  },
+  "bugs": {
+    "url": "https://github.com/Joruno-w/vscode-git-user-config/issues"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/Joruno-w"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/index.js",
+  "icon": "res/icon.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:openInGitHub.openProject",
+    "onCommand:openInGitHub.configureUser"
+  ],
+  "extensionPack": [
+    "fabiospampinato.vscode-open-in-github"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "openInGitHub.openProject",
+        "title": "Open in GitHub/GitLab"
+      },
+      {
+        "command": "openInGitHub.configureUser",
+        "title": "配置Git用户名和邮箱"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "nr build --watch",
+    "lint": "eslint .",
+    "vscode:prepublish": "nr build",
+    "publish": "vsce publish --no-dependencies",
+    "pack": "vsce package --no-dependencies",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && nr publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.4",
+    "@antfu/ni": "^0.21.2",
+    "@types/node": "^18.15.11",
+    "@types/vscode": "^1.77.0",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.37.0",
+    "esno": "^0.16.3",
+    "pnpm": "^8.1.1",
+    "rimraf": "^4.4.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.8",
+    "vsce": "^2.15.0"
+  }
+}
