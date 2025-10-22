@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Joruno-w <https://github.com/Joruno-w>
+Copyright (c) 2025 wangshengliang-wsl <https://github.com/wangshengliang-wsl>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
