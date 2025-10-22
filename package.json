@@ -2,7 +2,7 @@
   "publisher": "Joruno-w",
   "name": "vscode-git-user-config",
   "displayName": "vscode-git-user-config",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "packageManager": "pnpm@10.4.1",
   "description": "",
   "author": "Joruno-w <1710642275@qq.com>",
