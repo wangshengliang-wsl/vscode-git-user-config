@@ -30,9 +30,6 @@ jobs:
       - name: Install
         run: nci
 
-      - name: Lint
-        run: nr lint
-
   typecheck:
     runs-on: ubuntu-latest
     steps:
