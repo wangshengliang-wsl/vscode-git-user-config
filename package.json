@@ -59,7 +59,7 @@
     "pack": "vsce package --no-dependencies",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp && nr publish"
+    "release": "bumpp && nr pub"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
